@@ -28,7 +28,8 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/upload/**").addResourceLocations("file:"+ TaleUtils.getUploadFilePath()+"upload/");
+        registry.addResourceHandler("/upload/**")
+                .addResourceLocations("file:"+ TaleUtils.getUploadFilePath()+"upload/");
         super.addResourceHandlers(registry);
     }
 }
