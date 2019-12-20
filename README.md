@@ -99,3 +99,9 @@ My Blog是由Docker+SpringBoot+Mybatis+thymeleaf等技术实现的Java博客系�
 2. docker使用学习
 3. 切换为mybatis-plus
 4. 集成权限认证框架（shiro 或 spring security）
+5. jwt token 机制
+6. 前后端分离
+
+### 2019/12/20
+1.升级 spring boot 
+ 
