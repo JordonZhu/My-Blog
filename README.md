@@ -91,7 +91,7 @@ My Blog是由Docker+SpringBoot+Mybatis+thymeleaf等技术实现的Java博客系�
 2017-06-30 目录调整:docker组件化<br/>
 2017-07-20 问题修复:docker-compose重启时mysql容器中数据被删除并初始化的问题<br/>
 
-
+后台登录账户 admin 123456
 
 #个人学习 2019/12/11开始记录
 待测试
@@ -103,5 +103,7 @@ My Blog是由Docker+SpringBoot+Mybatis+thymeleaf等技术实现的Java博客系�
 6. 前后端分离
 
 ### 2019/12/20
-1.升级 spring boot 
+1.升级 spring boot === 已完成
+2.升级 druid === 已完成
+3.配置热更新
  

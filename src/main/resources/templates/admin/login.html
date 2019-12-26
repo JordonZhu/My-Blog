@@ -95,21 +95,21 @@
 <script th:src="@{/admin/js/base.js}"></script>
 <script type="text/javascript">
     /*<![CDATA[*/
-    var tale = new $.tale();
-    function checkForm() {
-        tale.post({
-            url: '/admin/login',
-            data: $("#loginForm").serialize(),
-            success: function (result) {
-                if (result && result.success) {
-                    window.location.href = '/admin/index';
-                } else {
-                    tale.alertError(result.msg || '登录失败');
+        var tale = $.tale;
+        function checkForm() {
+            tale.post({
+                url: '/admin/login',
+                data: $("#loginForm").serialize(),
+                success: function (result) {
+                    if (result && result.success) {
+                        window.location.href = '/admin/index';
+                    } else {
+                        tale.alertError(result.msg || '登录失败');
+                    }
                 }
-            }
-        });
-        return false;
-    }
+            });
+            return false;
+        }
     /*]]>*/
 </script>
 </body>
