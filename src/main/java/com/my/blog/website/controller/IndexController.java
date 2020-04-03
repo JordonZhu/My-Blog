@@ -137,7 +137,7 @@ public class IndexController extends BaseController {
      * @param contents
      */
     private void completeArticle(HttpServletRequest request, ContentVo contents) {
-        if (contents.getAllowComment()) {
+        if (Boolean.TRUE.equals(contents.getAllowComment())) {
             String cp = request.getParameter("cp");
             if (StringUtils.isBlank(cp)) {
                 cp = "1";
@@ -303,7 +303,7 @@ public class IndexController extends BaseController {
         if (null == contents) {
             return this.render_404();
         }
-        if (contents.getAllowComment()) {
+        if (Boolean.TRUE.equals(contents.getAllowComment())) {
             String cp = request.getParameter("cp");
             if (StringUtils.isBlank(cp)) {
                 cp = "1";
